@@ -1,18 +1,21 @@
 {
-  "name": "gi-market-checklist",
+  "name": "tag-roadmap",
   "version": "0.1.0",
   "private": true,
   "engines": {
     "node": ">=22.13.0"
   },
   "scripts": {
-    "dev": "vinext dev",
-    "build": "vinext build",
-    "start": "vinext start",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "dev:sites": "vinext dev",
+    "build:sites": "vinext build",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
+    "@neondatabase/serverless": "1.1.0",
     "drizzle-orm": "0.45.2",
     "lucide-react": "^1.34.0",
     "next": "16.2.6",

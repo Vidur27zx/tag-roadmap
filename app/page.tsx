@@ -72,7 +72,7 @@ export default function Home() {
   const [nameInput, setNameInput] = useState('');
   const [mainView, setMainView] = useState<'simple' | 'team'>('simple');
   const [teamTab, setTeamTab] = useState<'roadmap' | 'board'>('roadmap');
-  const [activePhase, setActivePhase] = useState(PHASES[0].id);
+  const [activePhase, setActivePhase] = useState<string>(PHASES[0].id);
   const [editMode, setEditMode] = useState(false);
   const [editPassword, setEditPassword] = useState('');
   const [passwordInput, setPasswordInput] = useState('');
