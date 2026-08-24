@@ -19,8 +19,9 @@ A shared client checklist and team roadmap for GI-Market. Task status, milestone
 3. Configure these environment variables for Production, Preview, and Development:
    - `DATABASE_URL`: pooled Postgres connection URL supplied by the database integration.
    - `EDIT_PASSWORD`: the shared team edit password.
-   - `NEXT_PUBLIC_SITE_URL`: the final production URL, such as `https://tag-roadmap.vercel.app`.
 4. Deploy. The tracker table and its initial board are created automatically on first use.
+
+Vercel's production URL is detected automatically for social previews. `NEXT_PUBLIC_SITE_URL` remains available only as an optional custom-domain override.
 
 The included `vercel.json` selects the Next.js framework and standard production build.
 

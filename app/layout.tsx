@@ -12,8 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+const metadataOrigin = process.env.NEXT_PUBLIC_SITE_URL
+  || (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : 'http://localhost:3000');
+
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
+  metadataBase: new URL(metadataOrigin),
   title: 'GI-Market Project Tracker',
   description: 'Shared project progress, milestones, and tasks for the GI-Market team and client.',
   openGraph: {
