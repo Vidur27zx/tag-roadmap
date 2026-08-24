@@ -2,7 +2,7 @@
 
 A shared client checklist and team roadmap for GI-Market. Task status, milestones, progress, and editor attribution stay synchronized for everyone using the deployed link.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2FVidur27zx%2Ftag-roadmap&env=DATABASE_URL%2CEDIT_PASSWORD%2CNEXT_PUBLIC_SITE_URL&envDescription=Postgres%20connection%2C%20team%20edit%20password%2C%20and%20production%20URL)
+[![Import into Vercel](https://vercel.com/button)](https://vercel.com/new/import?s=https%3A%2F%2Fgithub.com%2FVidur27zx%2Ftag-roadmap)
 
 ## Features
 
